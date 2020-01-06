@@ -1,0 +1,5 @@
+<settings>
+    <setting propertyKey="@Properties.deviceId" title="@Strings.deviceIdTitle">
+        <settingConfig type="alphaNumeric" />
+    </setting>
+</settings>

@@ -1,0 +1,4 @@
+DEVICE = edge1030
+SDK_HOME = "/home/user/connectiq-sdk-lin-3.1.6-2019-10-23-2de4665c6"
+DEPLOY = /media/GARMIN/GARMIN/APPS/
+PRIVATE_KEY = "/home/user/developer_key.der"

@@ -5,6 +5,7 @@ devices = `grep 'iq:product id' manifest.xml | sed 's/.*iq:product id="\([^"]*\)
 JAVA_OPTIONS = JDK_JAVA_OPTIONS="--add-modules=java.xml.bind"
 
 build:
+	rm -f bin/*
 	cat ./monkey.jungle ./barrels.jungle > ./build.jungle &&\
 	$(SDK_HOME)/bin/monkeyc \
 	--jungles ./build.jungle \
@@ -15,6 +16,7 @@ build:
 	rm ./build.jungle
 
 buildall:
+	rm -f bin/*
 	cat ./monkey.jungle ./barrels.jungle > ./build.jungle
 	@for device in $(devices); do \
 		echo "-----"; \
@@ -37,6 +39,7 @@ deploy: build
 	@cp bin/$(appName).prg $(DEPLOY)
 
 package:
+	rm -f bin/*
 	cat ./monkey.jungle ./barrels.jungle > ./build.jungle
 	@$(SDK_HOME)/bin/monkeyc \
 	--jungles ./build.jungle \

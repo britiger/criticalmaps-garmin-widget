@@ -4,6 +4,7 @@ using Toybox.Position;
 using Toybox.Time;
 using Toybox.Communications;
 using Toybox.Math;
+using Toybox.Lang;
 
 using CriticalMapsAPIBarrel as CM;
 
@@ -13,8 +14,7 @@ var nearestCM = 0;
 var countCM10 = 0;
 var chatText = "";
 
-(:background)
-class CriticalMapsSenderWeb extends Toybox.System.ServiceDelegate {	
+class CriticalMapsSenderWeb extends Toybox.System.ServiceDelegate {
 
     function initialize() {
         System.ServiceDelegate.initialize();

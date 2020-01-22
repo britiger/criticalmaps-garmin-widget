@@ -1,4 +1,5 @@
 <drawables>
-    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+    <bitmap id="cm_logo_96" filename="logo-icon-96.png" />
+    <bitmap id="cm_logo_36" filename="logo-icon-36.png" />
     <bitmap id="cm_logo" filename="logo-icon-192.png" />
 </drawables>

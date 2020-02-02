@@ -1,3 +1,4 @@
 <properties>
     <property id="deviceId" type="string"></property>
+    <property id="sendCounter" type="number">0</property>
 </properties>

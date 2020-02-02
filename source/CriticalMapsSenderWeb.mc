@@ -5,6 +5,7 @@ using Toybox.Time;
 using Toybox.Communications;
 using Toybox.Math;
 using Toybox.Lang;
+using Toybox.Application.Properties;
 
 using CriticalMapsAPIBarrel as CM;
 
@@ -19,6 +20,14 @@ class CriticalMapsSenderWeb extends Toybox.System.ServiceDelegate {
     function initialize() {
         System.ServiceDelegate.initialize();
     }
+    
+    function loadDefaultValues() {
+        numResponse = Properties.getValue("sendCounter");
+        if (! numResponse instanceof Toybox.Lang.Long && ! numResponse instanceof Toybox.Lang.Number) {
+            System.println("sendCounter is not numeric");
+            numResponse = 0;
+        }
+    }
 
     function sendPositionData() {
         var callback = new Lang.Method($, :callbackCM);
@@ -31,6 +40,7 @@ function callbackCM(responseCode, data) {
     lastResponse = result["responseCode"];
     if (lastResponse == 200){
         numResponse += 1;
+        Properties.setValue("sendCounter", numResponse);
         nearestCM = result["nearestCM"];
         countCM10 = result["countCM10"];
         chatText = result["chatText"];

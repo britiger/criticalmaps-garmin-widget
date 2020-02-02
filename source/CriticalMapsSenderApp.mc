@@ -19,7 +19,8 @@ class CriticalMapsSenderApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() {
-    	System.println(CriticalMapsAPIBarrel.getDeviceId());
+        System.println(CriticalMapsAPIBarrel.getDeviceId());
+        CriticalMapsSenderWeb.loadDefaultValues();
         return [ new CriticalMapsSenderView(), new CriticalMapsSenderDelegate() ];
     }
 

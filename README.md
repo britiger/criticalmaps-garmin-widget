@@ -4,9 +4,11 @@ This is a Garmin Connect IQ Widget which sends the current position to the API o
 
 Current supported Devices (tested with simulator):
   - Edge 1000
-  - Edge 1030 (also tested on real device)
+  - Edge 1030 (also tested on real device) + 1030 Bontrager
+  - Edge Explore
 
 ## Screenshots
 
-![Edge 1030](/docs/edge1030.png)
+![Edge 1030 / 1030 Bontrager](/docs/edge1030.png)
 ![Edge 1000](/docs/edge_1000.png)
+![Edge Explore](/docs/edgeexplore.png)

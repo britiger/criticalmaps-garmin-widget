@@ -2,7 +2,9 @@
     <iq:application entry="CriticalMapsSenderApp" id="b0e45c9ffc8d49fcb87c7a001fea2b08" launcherIcon="@Drawables.cm_logo_36" minSdkVersion="2.4.0" name="@Strings.AppName" type="widget" version="0.2.0">
         <iq:products>
             <iq:product id="edge1030"/>
+            <iq:product id="edge1030bontrager"/>
             <iq:product id="edge_1000"/>
+            <iq:product id="edgeexplore"/>
         </iq:products>
         <iq:permissions>
             <iq:uses-permission id="Background"/>

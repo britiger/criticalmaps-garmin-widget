@@ -1,0 +1,12 @@
+<layout id="MainLayout">
+    <label x="center" y="5" text="@Strings.prompt" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <button x="center" y="50" width="96" height="96" behavior="onImagePress">
+        <state id="stateDefault" bitmap="@Drawables.cm_logo_96" />
+    </button>
+       
+    <label id="t_next" x="20" y="180" text="@Strings.t_cm_next" />
+        <label id="v_next" x="right" y="180" text="0 km" />
+    <label id="t_count" x="20" y="210" text="@Strings.t_cm_count" />
+        <label id="v_count" x="right" y="210" text="0" />
+    <label id="outputtext" x="left" y="260" text="-" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_LEFT" font="Graphics.FONT_SMALL" />    
+</layout>

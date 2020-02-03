@@ -14,6 +14,7 @@ var numResponse = 0;
 var nearestCM = 0;
 var countCM10 = 0;
 var chatText = "";
+var mapMarkers = [];
 
 class CriticalMapsSenderWeb extends Toybox.System.ServiceDelegate {
 
@@ -49,6 +50,7 @@ function callbackCM(responseCode, data) {
         nearestCM = result["nearestCM"];
         countCM10 = result["countCM10"];
         chatText = result["chatText"];
+        mapMarkers = result["mapMarkers"];
     } else if(lastResponse == -402) {
         // to many data for garmin
         numResponse += 1;

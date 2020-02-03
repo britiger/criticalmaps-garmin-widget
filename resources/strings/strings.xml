@@ -4,7 +4,9 @@
     <string id="prompt">Critical Maps</string>
     
     <string id="t_cm_next">Next CM</string>
-    <string id="t_cm_count">Count Nearby</string>    
+    <string id="t_cm_count">Count Nearby</string>
+    <string id="menu_title">CM Menu</string>
+    <string id="reset_counter">Reset Counter</string>
     
     <string id="deviceIdTitle">Device Id</string>
     

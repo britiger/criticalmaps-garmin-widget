@@ -12,6 +12,8 @@ class CriticalMapsSenderMenuDelegate extends WatchUi.MenuInputDelegate {
         if (item == :item_info) {
             System.println("Show Info");
             CriticalMapsSenderWeb.sendPositionData();
+        } else if (item == :item_reset_counter) {
+            CriticalMapsSenderWeb.resetCounter();
         }
     }
     

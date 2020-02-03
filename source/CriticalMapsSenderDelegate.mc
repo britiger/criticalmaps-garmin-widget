@@ -15,6 +15,7 @@ class CriticalMapsSenderDelegate extends WatchUi.BehaviorDelegate {
     function onMenu() {
         var menu = new WatchUi.Menu();
         menu.setTitle("CM Menu");
+        menu.addItem("Reset Counter", :item_reset_counter);
         menu.addItem("DeviceId:", :item_info);
 
         menu.addItem(CriticalMapsAPIBarrel.getDeviceIdRaw().substring( 0, 20), :item_info);

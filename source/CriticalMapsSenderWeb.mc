@@ -25,8 +25,13 @@ class CriticalMapsSenderWeb extends Toybox.System.ServiceDelegate {
         numResponse = Properties.getValue("sendCounter");
         if (! numResponse instanceof Toybox.Lang.Long && ! numResponse instanceof Toybox.Lang.Number) {
             System.println("sendCounter is not numeric");
-            numResponse = 0;
+            resetCounter();
         }
+    }
+    
+    function resetCounter() {
+        numResponse = 0;
+        Properties.setValue("sendCounter", numResponse);
     }
 
     function sendPositionData() {
